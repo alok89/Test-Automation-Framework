@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<testData>
+	<data id="1" name="FirstTestData">
+		<firstName>Alok Kumar</firstName>
+		<lastName>Singh</lastName>
+		<email>alok.sabran@gmail.com</email>
+		<phone>(845)555-1212</phone>
+		<address>Pune</address>
+	</data>
+	
+	<data id="2" name="SecondTestData">
+		<firstName>Akansha</firstName>
+		<lastName>Singh</lastName>
+		<email>akkansha.sabran@gmail.com</email>
+		<phone>(845)545-1913</phone>
+	</data>
+	
+	<data id="3" name="ThirdTestData">
+		<firstName>Annu</firstName>
+		<lastName>Singh</lastName>
+		<email>annu.sabran@gmail.com</email>
+		<phone>(845)535-1715</phone>
+		<place>Bengaluru</place>
+	</data>
+</testData>

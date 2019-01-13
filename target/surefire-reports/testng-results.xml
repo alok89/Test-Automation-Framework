@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="87794" started-at="2019-01-13T05:25:45Z" finished-at="2019-01-13T05:27:13Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="87794" started-at="2019-01-13T05:25:45Z" finished-at="2019-01-13T05:27:13Z">
+      <class name="tests.TestBase">
+        <test-method status="PASS" signature="configure()[pri:0, instance:tests.TestBase@7c16905e]" name="configure" is-config="true" duration-ms="27" started-at="2019-01-13T05:25:45Z" finished-at="2019-01-13T05:25:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configure -->
+      </class> <!-- tests.TestBase -->
+      <class name="tests.TestLandingPage">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.TestLandingPage@2a2d45ba]" name="startBrowser" is-config="true" duration-ms="5745" started-at="2019-01-13T05:25:45Z" finished-at="2019-01-13T05:25:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="testNavigateToSignUpPage()[pri:1, instance:tests.TestLandingPage@2a2d45ba]" name="testNavigateToSignUpPage" duration-ms="24566" started-at="2019-01-13T05:25:51Z" finished-at="2019-01-13T05:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToSignUpPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.TestLandingPage@2a2d45ba]" name="closeBrowser" is-config="true" duration-ms="299" started-at="2019-01-13T05:26:16Z" finished-at="2019-01-13T05:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.TestLandingPage@2a2d45ba]" name="startBrowser" is-config="true" duration-ms="3779" started-at="2019-01-13T05:26:16Z" finished-at="2019-01-13T05:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="testNavigateToSignInPage()[pri:2, instance:tests.TestLandingPage@2a2d45ba]" name="testNavigateToSignInPage" duration-ms="51022" started-at="2019-01-13T05:26:20Z" finished-at="2019-01-13T05:27:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToSignInPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.TestLandingPage@2a2d45ba]" name="closeBrowser" is-config="true" duration-ms="2328" started-at="2019-01-13T05:27:11Z" finished-at="2019-01-13T05:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.TestLandingPage -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
