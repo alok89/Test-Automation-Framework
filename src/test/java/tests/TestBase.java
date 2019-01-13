@@ -4,10 +4,9 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import manageDrivers.DriverManagerFactory;
 import manageDrivers.DriverType;
@@ -22,20 +21,19 @@ public class TestBase {
 	
 	private static final String FILE_PATH = System.getProperty("user.dir")+"\\src\\main\\resources\\config.properties";
 	
-	
 	@BeforeSuite
 	public void configure() {
 		properties = ReadPropertiesFile.getInstance(FILE_PATH).loadProperties();
 	}
 	
-	@BeforeMethod
-	public void startBrowser() {
+	@BeforeTest
+	public void setUpBrowser() {
 		manager = DriverManagerFactory.getDriverManager(DriverType.CHROME);
 		driver = manager.getDriver();
 		manager.configureBrowser(TimeUnit.MINUTES, 2);
 	}
 	
-	@AfterMethod
+	//@AfterMethod
 	public void closeBrowser() {
 		driver.close();
 	}

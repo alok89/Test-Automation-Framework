@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestLandingPage" hash-for-method="testNavigateToSignInPage">testNavigateToSignInPage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestLandingPage" hash-for-method="testFeaturesDetailsPages(Test Cases)">testFeaturesDetailsPages(Test Cases)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestLandingPage" hash-for-method="testFeaturesDetailsPages(In-app bug reporting)">testFeaturesDetailsPages(In-app bug reporting)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestLandingPage" hash-for-method="testNavigateToSignUpPage">testNavigateToSignUpPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.TestLandingPage" hash-for-method="testSignInPage">testSignInPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,9 +140,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testNavigateToSignInPage">
-                  </a> <!-- testNavigateToSignInPage -->
-                  <span class="method-name">testNavigateToSignInPage</span>
+                  <a name="testFeaturesDetailsPages(Test Cases)">
+                  </a> <!-- testFeaturesDetailsPages(Test Cases) -->
+                  <span class="method-name">testFeaturesDetailsPages</span>
+                  <span class="parameters">(Test Cases)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFeaturesDetailsPages(In-app bug reporting)">
+                  </a> <!-- testFeaturesDetailsPages(In-app bug reporting) -->
+                  <span class="method-name">testFeaturesDetailsPages</span>
+                  <span class="parameters">(In-app bug reporting)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -140,6 +159,13 @@
                   <a name="testNavigateToSignUpPage">
                   </a> <!-- testNavigateToSignUpPage -->
                   <span class="method-name">testNavigateToSignUpPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInPage">
+                  </a> <!-- testSignInPage -->
+                  <span class="method-name">testSignInPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,15 +222,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testNavigateToSignInPage')
+data.setCell(0, 1, 'testSignInPage')
 data.setCell(0, 2, 'tests.TestLandingPage')
-data.setCell(0, 3, 46359);
+data.setCell(0, 3, 44344);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testNavigateToSignUpPage')
 data.setCell(1, 2, 'tests.TestLandingPage')
-data.setCell(1, 3, 25151);
+data.setCell(1, 3, 25909);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testFeaturesDetailsPages')
+data.setCell(2, 2, 'tests.TestLandingPage')
+data.setCell(2, 3, 15754);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testFeaturesDetailsPages')
+data.setCell(3, 2, 'tests.TestLandingPage')
+data.setCell(3, 3, 11805);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -240,34 +274,34 @@ return data;
                 <span class="method-name">configure</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">35 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">initializePage</span>
+                <span class="method-start">17652 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testNavigateToSignUpPage</span>
-                <span class="method-start">5465 ms</span>
+                <span class="method-start">17741 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">30625 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">30973 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testNavigateToSignInPage</span>
-                <span class="method-start">34851 ms</span>
+                <span class="method-name">testSignInPage</span>
+                <span class="method-start">43657 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">81212 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-suite after">
+              <div class="test-method">
+                <span class="method-name">testFeaturesDetailsPages(In-app bug reporting)</span>
+                <span class="method-start">88080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFeaturesDetailsPages(Test Cases)</span>
+                <span class="method-start">99889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
                 <span class="method-name">shutDown</span>
-                <span class="method-start">83558 ms</span>
-              </div> <!-- configuration-suite after -->
+                <span class="method-start">115645 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

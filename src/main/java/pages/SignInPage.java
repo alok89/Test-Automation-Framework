@@ -15,6 +15,7 @@ public class SignInPage extends PageBase {
 		super(driver);
 	}
 	
+	protected PageBase pageBase;
 	private static final String PAGE_TITLE = "Sign in to your CrowdTesting account";
 	
 	@FindBy(how = How.ID, using = "username")
@@ -80,12 +81,12 @@ public class SignInPage extends PageBase {
 			return PageFactory.initElements(driver, HomePage.class);
 		}else if(accountName.equalsIgnoreCase("GitHub")) {
 			signInUsingGitHubAccount();
-			return null;
+			return pageBase;
 		}else if(accountName.equalsIgnoreCase("BitBucket")) {
 			signInUsingbitBucketAccount();
-			return null;
-		}else
-			return null;
+			return pageBase;
+		}
+		return pageBase;
 	}
 
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Suite">
-	<test name="Integration Test">
+	<test name="TestPages">
 		<classes>
 			<class name="tests.TestLandingPage" />
 		</classes>

@@ -1,41 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="83305" started-at="2019-01-13T05:03:24Z" finished-at="2019-01-13T05:04:47Z">
+  <suite name="Suite" duration-ms="116694" started-at="2019-01-13T12:49:22Z" finished-at="2019-01-13T12:51:19Z">
     <groups>
     </groups>
-    <test name="Integration Test" duration-ms="83305" started-at="2019-01-13T05:03:24Z" finished-at="2019-01-13T05:04:47Z">
+    <test name="Integration Test" duration-ms="116694" started-at="2019-01-13T12:49:22Z" finished-at="2019-01-13T12:51:19Z">
       <class name="tests.TestLandingPage">
-        <test-method status="PASS" signature="configure()[pri:0, instance:tests.TestLandingPage@2e3fc542]" name="configure" is-config="true" duration-ms="16" started-at="2019-01-13T05:03:24Z" finished-at="2019-01-13T05:03:24Z">
+        <test-method status="PASS" signature="configure()[pri:0, instance:tests.TestLandingPage@4524411f]" name="configure" is-config="true" duration-ms="33" started-at="2019-01-13T12:49:22Z" finished-at="2019-01-13T12:49:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.TestLandingPage@2e3fc542]" name="startBrowser" is-config="true" duration-ms="5430" started-at="2019-01-13T05:03:24Z" finished-at="2019-01-13T05:03:30Z">
+        <test-method status="PASS" signature="setUpBrowser()[pri:0, instance:tests.TestLandingPage@4524411f]" name="setUpBrowser" is-config="true" duration-ms="17586" started-at="2019-01-13T12:49:22Z" finished-at="2019-01-13T12:49:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="testNavigateToSignUpPage()[pri:1, instance:tests.TestLandingPage@2e3fc542]" name="testNavigateToSignUpPage" duration-ms="25151" started-at="2019-01-13T05:03:30Z" finished-at="2019-01-13T05:03:55Z">
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="initializePage()[pri:0, instance:tests.TestLandingPage@4524411f]" name="initializePage" is-config="true" duration-ms="73" started-at="2019-01-13T12:49:40Z" finished-at="2019-01-13T12:49:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method status="PASS" signature="testNavigateToSignUpPage()[pri:1, instance:tests.TestLandingPage@4524411f]" name="testNavigateToSignUpPage" duration-ms="25909" started-at="2019-01-13T12:49:40Z" finished-at="2019-01-13T12:50:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavigateToSignUpPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.TestLandingPage@2e3fc542]" name="closeBrowser" is-config="true" duration-ms="345" started-at="2019-01-13T05:03:55Z" finished-at="2019-01-13T05:03:55Z">
+        <test-method status="PASS" signature="testSignInPage()[pri:2, instance:tests.TestLandingPage@4524411f]" name="testSignInPage" duration-ms="44344" started-at="2019-01-13T12:50:06Z" finished-at="2019-01-13T12:50:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.TestLandingPage@2e3fc542]" name="startBrowser" is-config="true" duration-ms="3878" started-at="2019-01-13T05:03:55Z" finished-at="2019-01-13T05:03:59Z">
+        </test-method> <!-- testSignInPage -->
+        <test-method status="PASS" signature="testFeaturesDetailsPages(java.lang.String)[pri:3, instance:tests.TestLandingPage@4524411f]" name="testFeaturesDetailsPages" duration-ms="11805" started-at="2019-01-13T12:50:50Z" data-provider="FeaturesNameProvider" finished-at="2019-01-13T12:51:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[In-app bug reporting]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="testNavigateToSignInPage()[pri:2, instance:tests.TestLandingPage@2e3fc542]" name="testNavigateToSignInPage" duration-ms="46359" started-at="2019-01-13T05:03:59Z" finished-at="2019-01-13T05:04:45Z">
+        </test-method> <!-- testFeaturesDetailsPages -->
+        <test-method status="PASS" signature="testFeaturesDetailsPages(java.lang.String)[pri:3, instance:tests.TestLandingPage@4524411f]" name="testFeaturesDetailsPages" duration-ms="15754" started-at="2019-01-13T12:51:02Z" data-provider="FeaturesNameProvider" finished-at="2019-01-13T12:51:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Cases]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testNavigateToSignInPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.TestLandingPage@2e3fc542]" name="closeBrowser" is-config="true" duration-ms="2109" started-at="2019-01-13T05:04:45Z" finished-at="2019-01-13T05:04:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="shutDown()[pri:0, instance:tests.TestLandingPage@2e3fc542]" name="shutDown" is-config="true" duration-ms="535" started-at="2019-01-13T05:04:48Z" finished-at="2019-01-13T05:04:48Z">
+        </test-method> <!-- testFeaturesDetailsPages -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:tests.TestLandingPage@4524411f]" name="shutDown" is-config="true" duration-ms="1083" started-at="2019-01-13T12:51:18Z" finished-at="2019-01-13T12:51:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->

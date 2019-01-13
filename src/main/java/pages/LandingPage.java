@@ -20,6 +20,15 @@ public class LandingPage extends PageBase {
 	
 	@FindBy(how = How.LINK_TEXT, using = "Sign up")
 	private WebElement signUpLink;
+	
+	@FindBy(how = How.LINK_TEXT, using = "Bug tracker")
+	private WebElement bugTrackerLink;
+	
+	@FindBy(how = How.LINK_TEXT, using = "Test cases")
+	private WebElement testCasesLink;
+	
+	@FindBy(how = How.LINK_TEXT, using = "In-app bug reporting")
+	private WebElement bugReportingLink;
 
 	private static final String PAGE_TITLE = "Lean Testing";
 	
@@ -44,6 +53,22 @@ public class LandingPage extends PageBase {
 		signUpLink.click();
 		WaitsForWebElement.waitFor(2000);
 		return PageFactory.initElements(driver, SignUpPage.class);
+	}
+	
+	public void openFeaturesDetailsPage(final String featureName) {
+		switch(featureName) {
+		case "Bug Tracker" :
+			bugTrackerLink.click();
+			break;
+		case "Test Cases" :
+			testCasesLink.click();
+			break;
+		case "In-app bug reporting" :
+			bugReportingLink.click();
+			break;
+		default :
+				System.out.println("Feature Name not matched ..!!");
+		}
 	}
 
 }
